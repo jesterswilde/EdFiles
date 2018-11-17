@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="list.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <title>List</title>
+</head>
+    <body>
+        <nav class="navbar navbar-dark bg-primary shadow">
+            <a class="navbar-brand" href="#">List</a>
+        </nav>
+        <div class='container mt-5'>
+            <div class='row'>
+                <div class='col-sm-3'></div>
+                <div class='col-sm-6'>
+                    <section className='card mt-2 col-sm-6'>
+                        <h3 className='card-header'>Items</h3>
+                        <ul class="list-group" id="item-list">
+                            <li class='list-group-item'>
+                                <span>Thing:</span>
+                                <span>10</span>
+                                <button class='float-right btn btn-primary'> delete </button> 
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <div class='row mt-5'>
+                <div class='col-sm-3'></div>
+                <div class='col-sm-3'>
+                    <form>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Name</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Item Name" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Amount</span>
+                            </div>
+                            <input type="number" class="form-control" placeholder="$" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <button class='btn btn-primary'> Add Item</button>
+                    </form>
+                </div>
+                <div class='col-sm-3'>
+                    Total: <span id='total'>10</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
